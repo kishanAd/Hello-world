@@ -8,6 +8,4 @@ response=requests.get(complete_link).json()
 print(f'The weather condition of {city_name} is {response["weather"][0]["description"]}.')
 y=response["main"]["temp"]
 
-temp_in_centigrade=(y-32)*5/9
-print(f'The current temperature of {city_name} is {temp_in_centigrade}')
 
